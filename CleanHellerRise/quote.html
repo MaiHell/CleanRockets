@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get a Quote</title>
+		<meta name="description" content="Quote Page" />
+		<meta name="Author" content="" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<style>
+		.hidden {
+			display: none;
+		}
+		
+		.box {
+			display: none;
+		}
+		</style>
+	</head>
+	<body class="smoothscroll enable-animation">
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="index.html">
+							<img id="home" src="https://rocketelevatorsxx.com/assets/home_page/R2.png" alt="Rocket Elevators Logo" />
+						</a>
+
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li><!-- HOME -->
+										<a href="index.html" target="_blank">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="index.html#services" target="_blank">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="index.html#portfolio" target="_blank">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news" target="_blank">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+            </div>
+		
+			<div class="container">
+				<div class="heading-title heading-dotted text-center">
+					<h1>Get a quote</h1>
+				</div>
+				<div class="divider divider-center divider-color"><!-- divider -->
+					<i class="fa fa-chevron-down"></i>
+				</div>
+				<h3>PLEASE SELECT BUILDING TYPE</h3>
+				<form id="myForm">
+					<div>
+						<label>PLEASE SELECT BUILDING TYPE</label>
+						<select id="building-type" class="form-control pointer">
+							<option value="">--- Select ---</option>
+							<option onclick="javascript:buildingType();" id="residential" value="residential">Residential</option>
+							<option onclick="javascript:buildingType();" id="commercial" value="commercial">Commercial</option>
+							<option onclick="javascript:buildingType();" id="corporate" value="corporate">Corporate</option>
+							<option onclick="javascript:buildingType();" id="hybrid" value="hybrid">Hybrid</option>
+						</select>
+					</div>
+			</div>
+		
+
+	<section class="container" id="quote">
+		
+
+		<div class="hidden isresidential container">
+			<div id="number-of-apartments" [...]>
+				<label>Number of Apartements In Building</label>
+				<input type="text" name="apartments" value="" id="apartments">
+			</div>
+			<div id="number-of-floors" [...]>
+				<label>Number of Floors</label>
+				<input type="text" name="floors" value="" id= "floors">
+			</div>
+			<div id="number-of-basements" [...]>
+				<label>Number of Basements</label>
+				<input type="text" name="bsmt" value="" id= "basements">
+			</div>
+			<div>
+				<label><input id="standard" type="radio" name="selectMe" value="standard"> Standard</label>
+				<label><input id="premium" type="radio" name="selectMe" value="premium"> Premium</label>
+				<label><input id="excelium" type="radio" name="selectMe" value="excelium"> Excelium</label>
+			</div>
+			<div>
+				<div id="standard" class="standard box">
+					<input type="hidden" name="doors" value="" 
+					<input type="hidden" name="extra" value="" >
+					<input type="hidden" name="shafts" value="" >
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="final-number" value="" id="final-number">
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$7,565.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="res-elevators-cost" value="" id="total-elevator-cost">
+				</div>
+				<div id="installation-fees">
+					<label>Total Installation Fee ($)</label>
+					<input type="text" name="res-install" value="" id= "install-cost" >
+				</div>
+				<div id="final-price">
+					<label>Final Price ($)</label>
+					<input type="text" name="res-final-price" value="" id= "final-cost">
+				</div>
+				</div>
+				<div id="premium" class="premium box">
+					<input type="hidden" name="doors-1" value="" >
+					<input type="hidden" name="extra-1" value="" >
+					<input type="hidden" name="shafts-1" value="" >
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="final-number-1" value="" id="final-number" >
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$12,345.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="res-elevators-cost-1" value="" id="total-elevator-cost">
+				</div>
+				<div id="installation-fees">
+					<label>Total Installation Fee ($)</label>
+					<input type="text" name="res-install-1" value="" id="install-cost" >
+				</div>
+				<div id="final-price">
+					<label>Final Price ($)</label>
+					<input type="text" name="res-final-price-1" value="" >
+				</div>
+				</div>
+				<div id="excelium" class="excelium box">
+					<input type="hidden" name="doors-2" value="" >
+					<input type="hidden" name="extra-2" value="" >
+					<input type="hidden" name="shafts-2" value="" >
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="final-number-2" value=""id="final-number" >
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$15,400.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="res-elevators-cost-2" value="" id= "excelium-elevator-cost">
+				</div>
+				<div id="installation-fees">	
+					<label>Total Installation Fee($)</label>
+					<input type="text" name="res-install-2" value="" id="install-cost">
+				</div>
+				<div id="final-price">
+					<label>Final Price ($)</label>
+					<input type="text" name="res-final-price-2" value="" id="final-cost" >
+				</div>
+				</div>
+		   </div>
+		   
+		</div>
+		<div class="hidden iscommercial">
+			<div id="number-of-floors" [...]>
+				<label>Number of Floors</label>
+				<input type="text" name="comm-floors" value="" id="floors">
+			</div>
+			<div id="number-of-basements" [...]>
+				<label>Number of Basements</label>
+				<input type="text" name="comm-basements" value="" id='basements'>
+			</div>
+			<div id="number-of-companies" [...]>
+				<label>Number of Companies</label>
+				<input type="text" name="comm-comps" value="" id= "companies">
+			</div>
+			<div id="number-of-parking-spots" [...]>
+				<label>Number of Parking Spots</label>
+				<input type="text" name="comm-park" value="" id= "parking">
+			</div>
+			<div id="number-of-Elevators" [...]>
+				<label>Number of Elevators</label>
+				<input type="text" name="comm-elevators" value="" id="elevators">
+			</div>
+
+			<div>
+				<label><input id="standard" type="radio" name="selectMe" value="standard"> Standard</label>
+				<label><input id="premium" type="radio" name="selectMe" value="premium"> Premium</label>
+				<label><input id="excelium" type="radio" name="selectMe" value="excelium"> Excelium</label>
+			</div>
+			<div>
+				<div id="standard" class="standard box">
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="comm-elevators-needed" value="" id="total-elevators">
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$7,565.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="comm-elevators-cost" value="" id= "elevator-cost" >
+				</div>
+				<div id="installation-fees">
+					<label>Total Installation Fee ($)</label>
+					<input type="text" name="comm-install" value="" id="install-cost">
+				</div>
+				<div id="final-price">
+					<label>Final Price ($)</label>
+					<input type="text" name="comm-final-price" value="" is="final-cost">
+				</div>
+				</div>
+				<div id="premium" class="premium box">
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="comm-elevators-needed-1" value="" id="elevartors" >
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$12,345.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="comm-elevators-cost-1" value="" id="total-elevator-cost" >
+				</div>
+				<div id="installation-fees">
+					<label>Total Installation Fee ($)</label>
+					<input type="text" name="comm-install-1" value="" >
+				</div>
+				<div id="final-price">	
+					<label>Final Price ($)</label>
+					<input type="text" name="comm-final-price-1" value="" >
+				</div>
+				</div>
+				<div id="excelium" class="excelium box">
+					<div id="elevator-amount">
+					<label>Total Elevators needed</label>
+					<input type="text" name="comm-elevators-needed-2" value="" ID="final-nummber">
+				</div>
+				<div id="elevator-unit-price">
+					<label>Cost Per Elevator</label>
+					<label>$15,400.00</label>
+				</div>
+				<div id="elevator-total-price">
+					<label>Total Elevaor Cost ($)</label>
+					<input type="text" name="comm-elevators-cost-2" value="" id="total-elevator-cost">
+				</div>
+				<div id="installation-fees">
+					<label>Total Installation Fee ($)</label>
+					<input type="text" name="comm-install-2" value="" id="install-cost">
+				</div>
+				<div id="final-price">
+					<label>Final Price ($)</label>
+					<input type="text" name="comm-final-price-2" value="" id="final-cost">
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="hidden iscorporate">
+			<div id="number-of-floors" [...]>
+				<label>Number of Floors</label>
+				<input type="text" name="corp-floors" value="" id="floors">
+			</div>
+			<div id="number-of-basements" [...]>
+				<label>Number of Basements</label>
+				<input type="text" name="corp-basements" value="" id="basements">
+			</div>
+			<div id="number-of-corporations" [...]>
+				<label>Number of Corporations</label>
+				<input type="text" name="corp-corps" value="" id="corporations">
+			</div>
+			<div id="number-of-parking-spots" [...]>
+				<label>Number of Parking Spots</label>
+				<input type="text" name="corp-parking" value="" id="parking">
+			</div>
+			<div id="maximum-occupancy" [...]>
+				<label>Maximum Occupancy Per Floor</label>
+				<input type="text" name="occupancy" value="" id="max-occupants-floor">
+			</div>
+			<div>
+				<label><input id="standard" type="radio" name="selectMe" value="standard"> Standard</label>
+				<label><input id="premium" type="radio" name="selectMe" value="premium"> Premium</label>
+				<label><input id="excelium" type="radio" name="selectMe" value="excelium"> Excelium</label>
+			</div>
+			<div id="standard" class="standard box">
+				<input type="hidden" name="corp-elevators" value="" >
+				<input type="hidden" name="corp-coloums" value="" >
+				<input type="hidden" name="corp-elevaors-per-coloum" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="corp-total-elevators" value="" id="elevators">
+			</div>
+			<div id="elevator-unit-price">
+				<label>Cost Per Elevator</label>
+				<label>$7,565.00</label>
+			</div>
+			<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="corp-elevators-cost" value="" id="final-number">
+			</div>
+			<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="corp-install" value="" id="intsll-cost">
+			</div>
+			<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="final-price" value="" id= "final-cost">
+			</div>
+			</div>
+			<div id="premium" class="premium box">
+				<input type="hidden" name="corp-elevators-1" value="" >
+				<input type="hidden" name="corp-coloums-1" value="" >
+				<input type="text" name="corp-elevaors-per-coloum-1" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="corp-total-elevators-1" value="" id="final-number">
+			</div>
+			<div id="elevator-unit-price">
+				<label>Cost Per Elevator</label>
+				<label>$12,345.00</label>
+			</div>
+			<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="corp-elevators-cost-1" value="" id="total-elevator-cost">
+			</div>
+			<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="corp-install-1" value="" id="instal-cost" >
+			</div>
+			<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="final-price-1" value="" id="final-cost" >
+			</div>
+			</div>
+			<div id="excelium" class="excelium box">
+				<input type="hidden" name="corp-elevators-2" value="" >
+				<input type="hidden" name="corp-coloums-2" value="" >
+				<input type="hidden" name="corp-elevaors-per-coloum-2" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="corp-total-elevators-2" value="" id="final-number">
+			</div>
+			<div id="elevator-unit-price">
+				<label>Cost Per Elevator</label>
+				<label>$15,400.00</label>
+			</div>
+			<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="corp-elevators-cost-2" value="" id=>
+			</div>
+			<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="corp-install-2" value="" id= "intall-cost">
+			</div>
+			<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="final-price-2" value="" id="final-cost">
+			</div>
+			</div>
+		</div>
+		<div class="hidden ishybrid">
+			<div id="number-of-floors">
+				<label>Number of Floors </label>
+				<input type="text" name="hybrid-floors" value="" id="elevators">
+			</div>
+			<div id="number-of-basements">
+				<label>Number of Basements</label>
+				<input type="text" name="hybrid-basements" value=""id="basements">
+			</div>
+			<div id="number-of-companies">
+				<label>Number of Companies</label>
+				<input type="text" name="hybrid-companies" value="" id="companies">
+			</div>
+			<div id="number-of-parking-spots">
+				<label>Number of Parking Spots</label>
+				<input type="text" name="hybrid-parking" value="" id="parking">
+			</div>
+			<div id="maximum-occupancy">
+				<label>Maximum Occupancy Per Floor</label>
+				<input type="text" name="occupancy" value="" id="max-occupants-floor">
+			</div>
+			<div id="business-hours">
+				<label>Business Hours</label>
+				<input type="number" id="hybrid-business-hours" name="quantity" min="1" max="24">
+			</div>
+			
+			<div>
+				<label><input id="standard" type="radio" name="selectMe" value="standard"> Standard</label>
+				<label><input id="premium" type="radio" name="selectMe" value="premium"> Premium</label>
+				<label><input id="excelium" type="radio" name="selectMe" value="excelium"> Excelium</label>
+			</div>
+			<div id="standard" class="standard box">
+				<input type="hidden" name="hybrid-elevators" id="hybrid-elevators" value="" >
+				<input type="hidden" name="hybrid-coloums" value="" >
+				<input type="hidden" name="hybrid-elevaors-per-coloum" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="hybrid-total-elevators" value="" id="final-number">
+				</div>
+				<div id="elevator-unit-price">
+				<label>Cost Per Elevator</label>
+				<label>$7,565.00</label>
+				</div>
+				<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="hybrid-elevators-cost" value="" id="total-elevator-cost" >
+				</div>
+				<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="hybrid-install" value="" id="install-cost" >
+				</div>
+				<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="hybrid-final-price" value="" id="final-cost">
+				</div>
+			</div>
+			<div id="premium" class="premium box">
+				<input type="hidden" name="hybrid-elevators-1" id="hybrid-elevators-1" value="" >
+				<input type="hidden" name="hybrid-coloums-1" value="" >
+				<input type="hidden" name="hybrid-elevaors-per-coloum-1" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="hybrid-total-elevators-1" value="" id="final-number">
+				</div>
+				<div id="elevator-unit-price">	
+				<label>Cost Per Elevator</label>
+				<label>$12,345.00</label>
+				</div>
+				<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="hybrid-elevators-cost-1" value="" id="total-elevator-cost">
+			</div>
+			<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="hybrid-install-1" value="" id="install-cost">
+			</div>
+			<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="hybrid-final-price-1" value="" id="final-cost">
+			</div>
+			</div>
+			<div id="excelium" class="excelium box">
+				<input type="hidden" name="hybrid-elevators-2" id="hybrid-elevators-2" value="" >
+				<input type="hidden" name="hybrid-coloums-2" value="" >
+				<input type="hidden" name="hybrid-elevaors-per-coloum-2" value="" >
+				<div id="elevator-amount">
+				<label>Total Elevators needed</label>
+				<input type="text" name="hybrid-total-elevators-2" value="" id ="final=number">
+			</div>
+			<div id="elevator-unit-price">	
+				<label>Cost Per Elevator</label>
+				<label>$15,400.00</label>
+			</div>
+			<div id="elevator-total-price">
+				<label>Total Elevaor Cost ($)</label>
+				<input type="text" name="hybrid-elevators-cost-2" value="" id="total-elevator-price">
+			</div>
+			<div id="installation-fees">
+				<label>Total Installation Fee ($)</label>
+				<input type="text" name="hybrid-install-2" value="" id="install-cost">
+			</div>
+			<div id="final-price">
+				<label>Final Price ($)</label>
+				<input type="text" name="hybrid-final-price-2" value="" id= "final-cost">
+			</div>
+			</div>
+		 </div>
+		 <br>
+		 <div>
+		 <input type="button" onclick="myFunction()" value="Reset form" id="reset">
+		 </div>
+		</form>
+	</section>>
+	</div>
+</body>
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
+							</p>
+							<h2>(418) 555-1234</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+					<!-- INFO -->
+					<div class="col-md-4 col-sm-4">
+
+						<p>
+							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong>4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</span>
+							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:418-555-1234">(418) 555-1234</a></span>
+							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="/cdn-cgi/l/email-protection#dbb2b5bdb49bb8b4bfbeb9b4a3a3f5b9b2a1"><span class="__cf_email__" data-cfemail="f1989f979eb1929e9594939e8989df93988b">[email&#160;protected]</span></a></span>
+						</p>
+
+					</div>
+					<!-- /INFO -->
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+					 All Rights Reserved, Rocket Elevators Co. LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		
+
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/quote.js"></script>
+		<script> 
+
+			$("#building-type").change(function(){          
+				var value = $("#building-type option:selected").val();
+				var theDiv = $(".is" + value);
+				
+				theDiv.slideDown().removeClass("hidden");
+				theDiv.siblings('[class*=is]').slideUp(function() { $(this).addClass("hidden"); });
+            });
+            
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('input[type="radio"]').click(function(){
+					var inputValue = $(this).attr("value");
+					var targetBox = $("." + inputValue);
+					$(".box").not(targetBox).hide();
+					$(targetBox).show();
+				});
+			});
+		</script>
+		<script>
+			function myFunction() {
+			  document.getElementById("myForm").reset();
+			}
+		</script>
+	</body>
+</html>
